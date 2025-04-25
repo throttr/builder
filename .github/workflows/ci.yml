@@ -1,9 +1,10 @@
-name: Build
+name: Continuous Integration
 
 on: [push]
 
 jobs:
-  docker:
+  build:
+    name: Build
     strategy:
       matrix:
         version: [1.87.0]
